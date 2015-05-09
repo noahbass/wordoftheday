@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Word of the Day</title>
+        <meta name="description" content="dictionary.com word of the day">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-cloak>
+        <div ng-controller="data">
+            <h2>word of the day</h2>
+            <h1><a href="{{ link }}">{{ word }}</a></h1>
+            <p>{{ description }}</p>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+        <script src="lib/xml2json.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
